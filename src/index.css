@@ -1,0 +1,44 @@
+/* ======================
+   GLOBAL RESET
+====================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======================
+   HTML & BODY
+====================== */
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; /* No horizontal scroll */
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* OPTIONAL: If you want a container but full width,
+   remove or override max-width. */
+.container {
+  width: 100%;
+  /* max-width: 1200px;    <== Remove or comment if you want 100% on wide screens */
+  margin: 0 auto;
+  padding: 0 1rem; 
+}
+
+/* ======================
+   OVERRIDE ANY VITE DEFAULT
+====================== */
+/* If your Vite project had a default index.css that sets 
+   body to display:flex; place-items:center, remove or override it here: */
+body {
+  display: block !important;
+  justify-content: unset !important;
+  align-items: unset !important;
+}
